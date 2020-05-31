@@ -1,0 +1,142 @@
+body {
+    display: flex;
+    justify-content: center;
+    font-family: Helvetica;
+  }
+  .main-container {
+    display: flex;
+    width: 1200px;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  h1,
+  h2 {
+    text-transform: uppercase;
+  }
+  
+  aside {
+    background-color: rgb(0, 204, 255);
+    flex-basis: 25%;
+    margin-right: 20px;
+    padding: 0 10px;
+  }
+  aside * {
+    color: white;
+  }
+  aside h2 {
+    letter-spacing: 5px;
+  }
+  aside section h2:first-child{
+    border-bottom: 2px solid white;
+  }
+  #profile-pic {
+    text-align: center;
+  }
+  #profile-pic img{
+    border-radius: 50%;
+    width: 200px;
+    border: solid 5px white;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0);
+  }
+  
+  main {
+    flex-basis: 75%;
+  }
+  main section > h2 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+  }
+  .hero {
+    background-color: #498b80;
+    padding: 15% 0;
+    text-align: center;
+  }
+  .hero h2 {
+    color: white;
+    border-top: 2px solid white;
+    letter-spacing: 10px;
+  }
+  .hero h1 {
+    letter-spacing: 10px;
+    color: white;
+  }
+  .about-me p {
+    line-height: 2em;
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+  }
+  article h3,
+  article h4 {
+    font-weight: bold;
+  }
+  article ul {
+    list-style-type: square;
+  }
+  
+  .references {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #F9BC5D;
+  }
+  .references article {
+    width: 50%;
+    text-align: center;
+  }
+  .references img {
+    width: 100px;
+  }
+  
+  dl {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  dt,
+  dd {
+    line-height: 1.5em;
+    border-top: 1px solid white;
+    flex-basis: 40%;
+    margin: 0;
+  }
+  dt:last-of-type,
+  dd:last-of-type {
+    border-bottom: 1px solid white;
+  }
+  dt {
+    font-weight: bolder;
+  }
+  
+  .social-item::before {
+    padding-right: 15px;
+  }
+  .fb::before {
+    font-family: Helvetica;
+    font-weight: 900;
+    content: "\f082";
+  }
+  
+  meter {
+    display: block;
+    width: 80%;
+  }
+  meter::-webkit-meter-optimum-value {
+    background: none;
+    background-color: #EDC0AF;
+  }
+  meter::-webkit-meter-bar {
+    background: none;
+    background-color: #FFFFFF;
+  }
+  
+  @media (max-width: 400px) {
+    .main-container {
+      width: 100%;
+      flex-wrap: wrap;
+      font-size: 1.2em;
+    }
+    aside,
+    main {
+      flex: 100%;
+    }
+  }
